@@ -14,9 +14,9 @@ import {
 export default function NavbarComponent() {
 	return (
 		<>
-			<Navbar shouldHideOnScroll>
+			<Navbar shouldHideOnScroll style={{ backgroundColor: "#F6DBF6" }}>
 				<NavbarBrand>
-					<a href="#">
+					<a href="/">
 						<img
 							src={RajaRaniLogo}
 							alt="Raja Rani Coaching"
@@ -30,28 +30,34 @@ export default function NavbarComponent() {
 					justify="center"
 					style={{ cursor: "pointer" }}>
 					<NavbarItem>
-						<ScrollLink
-							activeClass="current"
-							smooth
-							duration={500}
-							spy
+						<Link
 							color="foreground"
-							to={"courses"}>
+							href="/courses"
+							style={{ color: "#7F0082" }}>
 							Courses
-						</ScrollLink>
+						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link color="foreground" href="#">
+						<Link
+							color="foreground"
+							href="/community"
+							style={{ color: "#7F0082" }}>
 							Community
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link color="foreground" href="#">
+						<Link
+							color="foreground"
+							href="/blog"
+							style={{ color: "#7F0082" }}>
 							Blog
 						</Link>
 					</NavbarItem>
 					<NavbarItem>
-						<Link color="foreground" href="#">
+						<Link
+							color="foreground"
+							href="/about"
+							style={{ color: "#7F0082" }}>
 							About
 						</Link>
 					</NavbarItem>
@@ -61,21 +67,21 @@ export default function NavbarComponent() {
 						</Link>
 					</NavbarItem> */}
 					<NavbarItem>
-						<ScrollLink
-							activeClass="current"
-							smooth
-							duration={500}
-							spy
+						<Link
 							color="foreground"
-							to={"contact"}>
+							href="/contact"
+							style={{ color: "#7F0082" }}>
 							Contact Us
-						</ScrollLink>
+						</Link>
 					</NavbarItem>
 				</NavbarContent>
 				<NavbarContent justify="end">
 					<NavbarItem></NavbarItem>
 					<NavbarItem className="hidden lg:flex ">
-						<Link href="#" color="secondary">
+						<Link
+							href="/login"
+							color="secondary"
+							style={{ color: "#7F0082" }}>
 							Login
 						</Link>
 					</NavbarItem>
@@ -83,7 +89,8 @@ export default function NavbarComponent() {
 						<Button
 							as={Link}
 							color="secondary"
-							href="#"
+							style={{ color: "#7F0082", fontFamily: "Poppins" }}
+							href="/signup"
 							variant="flat">
 							Sign Up
 						</Button>

@@ -2,7 +2,8 @@ import React, { Fragment, useState } from "react";
 
 // Plugins
 import axios from "axios";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
+import FAQ from "../../components/FAQ";
 // ----------------
 
 type formDataType = {
@@ -84,39 +85,31 @@ function Contact() {
 
 		// Submitting Form
 		setServerState({ submitting: true });
-        const form = document.createElement('form');
-        Object.keys(formData).forEach((key) => {
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.name = formData["your-name"];
-            input.value = formData["your-subject"];
-            form.appendChild(input);
-        });
-        emailjs.sendForm('service_xbm6ir9', 'template_6v4rspy', form, '-QDiI9-snFkI5K9nI')
-        .then((result) => {
-            handleServerResponse(true, "Message Has Been Send");
-            console.log(result.text);
-        }, (error) => {
-            handleServerResponse(
-                			false,
-                			"Error occurs while sending"
-                		);
-            console.log(error.text);
-        });
-		// axios({
-		// 	method: "post",
-		// 	url: "samarthchaplot7@gmail.com",
-		// 	data: formData,
-		// })
-		// 	.then((r) => {
-		// 		handleServerResponse(true, "Message Has Been Send");
-		// 	})
-		// 	.catch((r) => {
-		// 		handleServerResponse(
-		// 			false,
-		// 			"Error occurs while sending"
-		// 		);
-		// 	});
+		const form = document.createElement("form");
+		Object.keys(formData).forEach((key) => {
+			const input = document.createElement("input");
+			input.type = "text";
+			input.name = formData["your-name"];
+			input.value = formData["your-subject"];
+			form.appendChild(input);
+		});
+		emailjs
+			.sendForm(
+				"service_xbm6ir9",
+				"template_6v4rspy",
+				form,
+				"-QDiI9-snFkI5K9nI"
+			)
+			.then(
+				(result) => {
+					handleServerResponse(true, "Message Has Been Send");
+					console.log(result.text);
+				},
+				(error) => {
+					handleServerResponse(false, "Error occurs while sending");
+					console.log(error.text);
+				}
+			);
 	};
 
 	const contactInfo = [
@@ -136,6 +129,14 @@ function Contact() {
 	return (
 		<section id="contact" className="section">
 			<div className="section-wrapper block">
+				<div className="section-wrapper pb-20">
+					<h2 className="text-center entry-title section-title">
+						FAQ
+					</h2>
+					<div>
+						<FAQ />
+					</div>
+				</div>
 				<div className="content-1300">
 					<div className="row">
 						<h2 className="entry-title section-title">
@@ -146,6 +147,7 @@ function Contact() {
 								Provide Your Detail & We'll Connect with You
 								Soon
 							</p>
+
 							{/* {contactData.paragrapgs.map((parg, i) => (
 								<p key={"contact-parg-" + i}>{parg}</p>
 							))} */}

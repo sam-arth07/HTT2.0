@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "question":"What types of courses does Raja-Rani Coaching offer?",
+        "answer":"Raja-Rani Coaching offers a variety of sewing courses ranging from basic stitching to advanced garment making, including specialized workshops in katori blouse design, western wear, and kids' apparel"
+    },
+    {
+        "id":2,
+        "question":"Can beginners enroll in your courses?",
+        "answer":"Absolutely! We have courses tailored for all skill levels, from complete beginners to advanced designers. Our basic stitching courses are perfect for those just starting out."
+    },
+    {
+        "id":3,
+        "question":"Are the classes online or offline?",
+        "answer":"We offer both online and offline classes. Our online classes can be accessed from anywhere, while our offline workshops provide hands-on experience in selected cities."
+    },
+    {
+        "id":4,
+        "question":"How can I access the course material after enrollment?",
+        "answer":"Once enrolled, students will receive access to our exclusive app where all course materials, including live session recordings and additional resources, are available."
+    },
+    {
+        "id":5,
+        "question":"Is there support available after course completion?",
+        "answer":"Yes, we offer post-course support. Students can reach out via WhatsApp for any queries or join our live doubt-clearing sessions."
+    },
+    {
+        "id":6,
+        "question":"Do you provide certificates upon course completion?",
+        "answer":"Yes, we provide certificates to students who successfully complete our courses, recognizing their skills and dedication."
+    },
+    {
+        "id":7,
+        "question":"What is the duration of your courses?",
+        "answer":"Course durations vary. Basic courses may last a few weeks, while advanced courses can span several months. Each course page details its specific duration."
+    },
+    {
+        "id":8,
+        "question":"How can I register for a course?",
+        "answer":"Registration can be done through our website or by contacting us directly via phone or email. Details are provided on our course pages."
+    },
+    {
+        "id":9,
+        "question":"Are there any prerequisites for enrolling in advanced courses?",
+        "answer":"Some advanced courses may require basic sewing skills. We recommend checking the specific course requirements before enrolling."
+    },
+    {
+        "id":10,
+        "question":"Do you offer any discounts or scholarships?",
+        "answer":"We occasionally offer discounts and run special promotions. Follow us on social media or subscribe to our newsletter for updates."
+    }
+]
